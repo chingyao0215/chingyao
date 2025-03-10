@@ -15,7 +15,7 @@
 import { ref, reactive } from "vue";
 export interface Props {
 	text: string,
-	classWrapper: []
+	classWrapper: string[]
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -28,7 +28,7 @@ let rippleStyle = reactive({});
 
 const createRipple = (event: MouseEvent) => {
 	initRipple.value = true;
-	const button = event.currentTarget;
+	const button = event.currentTarget as HTMLElement;
 
 	const diameter = Math.max(button.clientWidth, button.clientHeight);
 	const radius = diameter / 2;

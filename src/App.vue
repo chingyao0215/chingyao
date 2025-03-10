@@ -1,4 +1,3 @@
-
 <template>
 <div
 	class="container">
@@ -8,8 +7,11 @@
 	<div
 		class="content">
 		<Button 
-			:wrapperClass="['mr-10']"/>
-		<RippleButton />
+			text="My Button"
+			:classWrapper="['mr-10']"/>
+		<RippleButton 
+			text="Ripple Effect" 
+			:classWrapper="[]"/>
 		<TextInput />
 		<DefineModelTextInputParent />
 		<Select2 />

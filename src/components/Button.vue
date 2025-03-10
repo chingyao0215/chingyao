@@ -1,4 +1,3 @@
-
 <template>
 	<div class="button" role="button">{{ props.text }}</div>
 </template>
@@ -6,12 +5,11 @@
 <script setup lang="ts">
 export interface Props {
 	text: string,
-	classWrapper?: []
+	classWrapper?: string[]
 }
 
 const props = withDefaults(defineProps<Props>(), {
 	text: 'Default Button',
-
 	classWrapper: () => ([])
 })
 </script>
