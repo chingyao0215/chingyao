@@ -1,30 +1,55 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+<div
+	class="container">
+	<div
+		class="sidebar">
+	</div>	
+	<div
+		class="content">
+		<Button 
+			:wrapperClass="['mr-10']"/>
+		<RippleButton />
+		<TextInput />
+		<DefineModelTextInputParent />
+		<Select2 />
+		
+	</div>
+</div>
 </template>
 
+
+<script setup lang="ts">
+import Button from './components/Button.vue';
+import RippleButton from './components/RippleButton.vue';
+import TextInput from './components/TextInput.vue';
+import Select2 from './components/Select2.vue';
+import DefineModelTextInputParent from './components/DefineModelTextInputParent.vue';
+
+
+
+</script>
+
+
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.container {
+	display: flex;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.sidebar {
+	border-right: 5px solid white;
+	width: 200px;
+	background-color: grey;
+	height: 100vh;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.content {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 50px 50px;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
 </style>
