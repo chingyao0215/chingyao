@@ -53,7 +53,7 @@ const createRipple = (event: MouseEvent) => {
 	overflow: hidden;
 	transition: background 400ms;
 	color: #fff;
-	background-color: #6200ee;
+	background-color: #212A31;
 	padding: 10px 16px;
 	font-size: 14px;
 	height: 22px;
@@ -62,16 +62,16 @@ const createRipple = (event: MouseEvent) => {
 	outline: 0;
 	border: 0;
 	border-radius: 8px;
-	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 0.5rem rgba(18, 78, 102, 0.3);
 	cursor: pointer;
 }
 
 span.ripple {
-	position: absolute; /* The absolute position we mentioned earlier */
+	position: absolute;
 	border-radius: 50%;
 	transform: scale(0);
 	animation: ripple 600ms linear;
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(116, 141, 146, 0.7);
 }
 
 @keyframes ripple {

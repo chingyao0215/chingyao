@@ -16,7 +16,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 <style scoped>
 .button {
-	background-color: #6200ee;
+	background-color: #124E66;
 	border-radius: 8px;
 	border-style: none;
 	box-sizing: border-box;
@@ -35,15 +35,16 @@ const props = withDefaults(defineProps<Props>(), {
 	position: relative;
 	text-align: center;
 	text-decoration: none;
-	transition: color 100ms;
+	transition: all 0.2s ease;
 	vertical-align: baseline;
 	user-select: none;
 	-webkit-user-select: none;
 	touch-action: manipulation;
+	box-shadow: 0 2px 4px rgba(33, 42, 49, 0.2);
 }
 
 .button:hover,
 .button:focus {
-	background-color: #F082AC;
+	background-color: #212A31;
 }
 </style>
