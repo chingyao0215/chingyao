@@ -2,7 +2,7 @@
 import {ref} from 'vue';
 import DefineModelTextInput from './DefineModelTextInput.vue';
 
-const propsName = ref(null);
+const propsName = ref('');
 </script>
 
 <template>
