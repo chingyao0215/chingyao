@@ -1,0 +1,35 @@
+# www.yourwebsite.com robots.txt file
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location (update this with your actual sitemap URL)
+Sitemap: https://www.chingyao.com/sitemap.xml
+
+# Common directories to disallow
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /backend/
+
+# Prevent crawling of search results pages
+Disallow: /*?q=
+Disallow: /*?s=
+Disallow: /search/
+
+# Block specific bots that might overload your server (optional)
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+# Allow Google AdSense bot
+User-agent: Mediapartners-Google
+Allow: /
+
+# Crawl-delay directive (optional - use if needed)
+# Crawl-delay: 10 
